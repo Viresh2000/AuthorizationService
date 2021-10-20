@@ -35,10 +35,10 @@ namespace AuthorizationService.Repo
 
         public Boolean IsUservalid(LoginTbl user)
         {
-            List<LoginTbl> users = getuser();
-            foreach (LoginTbl u in users)
+            List<LoginTbl> Users = getuser();
+            foreach (LoginTbl u in Users)
             {
-                if (user.Username == u.Username && user.Pass == u.Pass)
+                if (user.Username == u.Username && user.Password == u.Password)
                 {
                     return true;
                 }
